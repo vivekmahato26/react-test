@@ -1,0 +1,112 @@
+.registerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    gap: 2rem;
+    box-shadow: 1px 2px 20px 3px rgba(0,0,0,0.3);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    // background-color: #9b59b6;
+    .left {
+        background-color: #fff;
+        max-width: 50%;
+        width: 50%;
+        box-shadow: 1px 2px 20px 3px rgba(0,0,0,0.3);
+        padding: 1rem;
+        border-radius: 0.3rem;
+        .title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            .desc {
+                font-size: 0.8rem;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+        .form {
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 0.5rem;
+                label {
+                    font-weight: 600;
+                }
+                input {
+                    width: 300px;
+                    height: 1.5rem;
+                    padding: 0.4rem;
+                    border: 1px solid #ababab;
+                    border-radius: 0.5rem;
+                }
+            }
+            button {
+                width: 300px;
+                height: 2rem;
+                text-align: center;
+                padding: 0.3rem;
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: #fff;
+                background-color: #9b59b6;
+                border:none;
+                margin-top: 1rem;
+            }
+        }
+        .social {
+            text-align: center;
+            position: relative;
+        }
+        .social::after{
+            content: "";
+            width: 100px;
+            height: 0.1rem;
+            background-color: rgba(0,0,0,0.3);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+        .social::before{
+            content: "";
+            width: 100px;
+            height: 0.1rem;
+            background-color: rgba(0,0,0,0.3);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            p {
+                border-radius: 0.5rem;
+                border : 0.5px solid rgba(0,0,0,0.3);
+                padding: 0.8rem 1.2rem;
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 0.2rem;
+                }
+            }
+        }
+    }
+    div {
+        background-color: #fff;
+        img {
+            max-width: 400px;
+        }
+    }
+}
